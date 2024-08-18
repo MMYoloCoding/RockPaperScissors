@@ -81,4 +81,12 @@ function playGame() {
   }
 }
 
-playGame();
+const btn1 = document.querySelector("#btn1");
+btn1.addEventListener("click", function (e) {
+  alert("Hello World! YOU DID IT! " + e.type + " is clicked!");
+  e.target.style.background = "pink";
+  e.target.textContent = "GG";
+});
+
+const btn2 = document.querySelector("#btn2");
+btn2.addEventListener("click", playGame);
